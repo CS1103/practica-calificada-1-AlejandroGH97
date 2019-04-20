@@ -34,6 +34,7 @@ namespace UTEC {
         std::string getlist_o(int param);
         void save(std::string output);
         void clear(Node* current);
+        Node* search(int param);
 
     };
 }

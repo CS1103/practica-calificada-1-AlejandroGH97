@@ -169,4 +169,24 @@ void UTEC::TwoLinkedList::save(std::string output){
     file.close();
 }
 
+UTEC::Node* UTEC::TwoLinkedList::search(int param) {
+    Node* temp = head1;
+    while(temp != head) {
+        if (temp->value == param) {
+            return temp;
+        }else{
+            temp = temp->next;
+        }
+    }
+    temp = head2;
+    while(temp != nullptr) {
+        if (temp->value == param) {
+            return temp;
+        }else{
+            temp = temp->next;
+        }
+    }
+    return nullptr;
+
+}
 
